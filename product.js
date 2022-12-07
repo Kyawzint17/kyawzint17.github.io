@@ -3,22 +3,22 @@ var products = [
     {
         name: "Samsung GS",
         quantity: 1,
-        ppu: 15000,
+        ppu: 25000,
     },
     {
-        name: "Xiaomi Xbox",
+        name: "Apple Xbox",
         quantity: 2,
-        ppu: 500
+        ppu: 8000
     },
     {
-        name: "iPhone 10 Pro Max Ultra",
+        name: "iPhone 10 Pro Max Ultra Rare",
         quantity: 1,
         ppu: 50000
     },
     {
         name:"ASUS Gaming Mouse",
         quantity: 1,
-        ppu: 4000
+        ppu: 6000
     }
 ]
 
