@@ -25,6 +25,7 @@ var products = [
 function loadData() {
 
     let productList = document.getElementById("productList")
+    let gross = 0
 
     for (let p in products) {
          let row = document.createElement("tr")
@@ -42,6 +43,7 @@ function loadData() {
          let total = document.createElement("td")
          total.innerHTML = products[p].ppu * products[p].quantity
          total.classList.add("text-right")
+         gross += products[p].ppu * products[p].quantity
          
          row.appendChild(productName)
          row.appendChild(quantity)
@@ -50,13 +52,11 @@ function loadData() {
          productList.appendChild(row)
     }
 
-    let gross = products.map(products=>products.ppu).reduce((prev, cur) => prev + cur);
-
-    document.getElementById("gross").innerHTML = gross
+   let grossElem = document.getElementById("gross")
+    grossElem.innerHTML = gross
 
     let vat = gross * 0.07
     let net = gross + vat
     document.getElementById("vat").innerHTML = vat.toFixed(2)
     document.getElementById("net").innerHTML = net.toFixed(2)
-    
 }
