@@ -1,0 +1,25 @@
+[
+    {
+        "qty": 1,
+        "item": "Product A",
+        "price": 100,
+        "discount": 0
+		
+    },
+    
+    {
+        "qty": 10,
+        "item": "Product B",
+        "price": 200,
+        "discount": 50
+		
+    },
+
+    {
+		"qty": 10,
+        "item": "Product C",
+        "price": 300,
+        "discount": 50
+		
+    }
+]
